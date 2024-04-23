@@ -4,6 +4,7 @@
     const lwId = "62b182eea31d8d9863079f42";
     //esta variable hay que cambiarlo por el id del usuario conectado, que se recoge un elemento de la página
     //let userId = "65d3763f741db932c906da1c";
+    let userId = "";
 
     const requestOptions = {
     method: "GET",
