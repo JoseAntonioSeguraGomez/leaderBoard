@@ -80,7 +80,7 @@ export function functionStart() {
     // LLAMADA A LAS FUNCIONES UNA VEZ CARGADA LA PAGINA //
     function functionStart() {
     // OBTENER EL ID DEL USUARIO CONECTADO
-    userId = document.getElementById('el_1712750078537_354').textContent;
+    userId = document.getElementById('el_1713871472478_340').textContent;
     fetchMetaProgress();
     fetchUser();
     }
