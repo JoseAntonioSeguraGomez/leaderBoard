@@ -16,8 +16,8 @@
     };
 
     // tag que se le pas para filtrar por marca
-    let tag = "MM-ADONIS";
-    let redirect = "after-login-b2b-adonis"
+    let tag = "";
+    let redirect = "";
     let pages = 0;
     let user = {};
     let users = [];
@@ -80,7 +80,10 @@
     // LLAMADA A LAS FUNCIONES UNA VEZ CARGADA LA PAGINA //
     function functionStart() {
     // OBTENER EL ID DEL USUARIO CONECTADO
-    userId = document.getElementById('el_1713872926166_467').textContent;
+    userId = document.getElementById('el_1712750078537_354').textContent;
+    tag = document.getElementById('el_1713876175072_347').textContent;
+    redirect = document.getElementById('el_1713876183093_353').textContent;
+
     fetchMetaProgress();
     fetchUser();
     }
