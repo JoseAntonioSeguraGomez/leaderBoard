@@ -3,7 +3,7 @@
     const token = "Bearer 17xa7adwlycG4qrbRatBdCHW41xtl9jNyaBq4d45";
     const lwId = "62b182eea31d8d9863079f42";
     //esta variable hay que cambiarlo por el id del usuario conectado, que se recoge un elemento de la página
-    //let userId = "65d3763f741db932c906da1c";
+    let userId = "65d3763f741db932c906da1c";
 
     const requestOptions = {
     method: "GET",
@@ -79,7 +79,7 @@
     // LLAMADA A LAS FUNCIONES UNA VEZ CARGADA LA PAGINA //
     function functionStart() {
     // OBTENER EL ID DEL USUARIO CONECTADO
-    userId = document.getElementById('el_1713871472478_340').textContent;
+    //userId = document.getElementById('el_1712750078537_354').textContent;
     fetchMetaProgress();
     fetchUser();
     }
