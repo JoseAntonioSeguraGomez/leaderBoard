@@ -1,0 +1,502 @@
+.btn {
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    color: #007bff;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .btn:hover {
+    background-color: #007bff;
+    color: #ffffff;
+  }
+
+  .h3 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /* HTML: <div class="loader"></div> */
+  .loader {
+    width: 50px;
+    padding: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #25b09b;
+    --_m:
+      conic-gradient(#0000 10%, #000),
+      linear-gradient(#000 0 0) content-box;
+    -webkit-mask: var(--_m);
+    mask: var(--_m);
+    -webkit-mask-composite: source-out;
+    mask-composite: subtract;
+    animation: l3 1s infinite linear;
+  }
+
+  @keyframes l3 {
+    to {
+      transform: rotate(1turn)
+    }
+  }
+
+  @keyframes l15 {
+    100% {
+      transform: rotate(1turn)
+    }
+  }
+
+  #listado div h2 {
+    margin-top: 10px;
+  }
+
+  #listado div p {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  #listado div {
+    margin-bottom: 20px;
+  }
+
+  .graficaDerecha {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+
+  #course-card-last-course {
+    padding-top: 16px;
+  }
+
+  .user-info h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .user-info h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .profile-card svg {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 15px;
+  }
+
+  .course-card svg {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 15px;
+  }
+
+  .profile-card h2,
+  .course-card .title-course {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .containerCourse progress {
+    margin-bottom: 10px;
+  }
+
+  .containerCourse .h3 {
+    font-size: 14px;
+  }
+
+  .profile-card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .podio svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .statistic p {
+    font-size: 40px;
+    background-color: hwb(0 100% 0% / 0.3);
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  th {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  td {
+    font-size: 14px;
+  }
+
+  .spinerVisible {
+    display: block;
+  }
+
+  .spinerOculto {
+    display: none;
+  }
+
+  .loading {
+    font-size: 30px;
+    padding-left: 20px;
+    display: flex;
+    text-align: flex-start;
+    opacity: 0.2;
+  }
+
+  .loading:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+    animation: ellipsis steps(4, end) 900ms infinite;
+    content: "\2026";
+    /* ascii code for the ellipsis character */
+    width: 0px;
+  }
+
+  @keyframes ellipsis {
+    to {
+      width: 1.25em;
+    }
+  }
+
+  @-webkit-keyframes ellipsis {
+    to {
+      width: 1.25em;
+    }
+  }
+
+  .background {
+    opacity: 0.1;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .logo {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .logo img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 600px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    width: 80vw;
+    max-width: 1200px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 70px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  .profile-card {
+    width: 32%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-align: left;
+  }
+
+  .course-card {
+    width: 65%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .table-section {
+    width: 68%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .table-section div {
+    margin-top: 50px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color: #006791;
+    color: white;
+  }
+
+  .podio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .ganador {
+    width: 80%;
+    background-color: gold;
+    border: solid 2px white;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .segundo {
+    width: 80%;
+    background-color: silver;
+    border: solid 2px white;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .tercero {
+    width: 80%;
+    background-color: #cd7f32;
+    border: solid 2px white;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .ganador h1,
+  .segundo h1,
+  .tercero h1 {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .position-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .statistic {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #listado {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list-item {
+    margin-bottom: 8px;
+    padding: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .list-item h2,
+  .statistic h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 20px;
+  }
+
+  .list-item p {
+    margin-left: 5%;
+    font-size: 24px;
+  }
+
+  .statistic p {
+    font-size: 40px;
+    background-color: hwb(0 100% 0% / 0.3);
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .user-info {
+    width: 48.5%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .user-info h2 {
+    margin-top: 0;
+  }
+
+  .container.par {
+    background-color: #006791;
+    color: #ffffff;
+  }
+
+  .container.impar {
+    background-color: #05bfad;
+    color: #000000;
+  }
+
+  .progreso {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 22.5px;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+
+  .progreso progress {
+    width: 90%;
+    height: 20px;
+    border: solid 3px white;
+  }
+
+  .progreso progress::-webkit-progress-value {
+    background-color: #F4B95D;
+  }
+
+  .progreso progress::-moz-progress-bar {
+    background-color: #F4B95D;
+  }
+
+  .containerCourse {
+    margin-bottom: 10px;
+  }
+
+  .statistics {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .position-circle p {
+    font-size: 60px;
+    z-index: 2;
+    color: #000000;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 20px;
+  }
+
+  .course-card div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  }
+
+  .course-card div p {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #171717;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      width: 90vw;
+      margin-top: 10px;
+    }
+
+    .profile-card,
+    .course-card,
+    .table-section,
+    .podio,
+    .position-circle,
+    .user-info,
+    .statistic,
+    .list-item {
+      width: 90%;
+      margin-top: 10px
+    }
+
+    .logo img {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 400px;
+    }
+
+    .statistics {
+      width: 90vw;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .graficaDerecha {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+  }
+
+  @media screen and (max-width: 480px) {
+    .container {
+      width: 95vw;
+    }
+
+    .profile-card,
+    .course-card,
+    .table-section,
+    .podio,
+    .position-circle,
+    .user-info,
+    .statistic,
+    .list-item {
+      width: 95%;
+    }
+  }
